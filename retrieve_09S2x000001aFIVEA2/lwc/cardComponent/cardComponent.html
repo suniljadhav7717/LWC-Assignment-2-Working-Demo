@@ -1,0 +1,19 @@
+<template>
+  <div class="slds-box">
+    <lightning-card>
+      <div>
+        <lightning-layout-item>
+          <p> {account.Name}</p> <br/>
+          <p> {account.AccountNumber}</p> <br>
+          <p>{account.Phone}</p> <br/>
+        </lightning-layout-item>
+      </div>
+      <lightning-button
+        label="Detail"
+        variant="label-hidden"
+        onclick={handleDetail}
+        class="slds-m-center_small"
+      ></lightning-button>
+    </lightning-card>
+  </div>
+</template>
